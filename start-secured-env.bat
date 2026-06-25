@@ -23,5 +23,8 @@ set ORIGINAL_COMSPEC=%COMSPEC%
 set COMSPEC=%~dp0agentguard-shell.bat
 set CLAUDE_CODE_SHELL=%~dp0agentguard-shell.bat
 
+:: Prepend the bin directory to PATH to intercept powershell commands
+set PATH=%~dp0bin;%PATH%
+
 :: Start a nested command prompt session keeping this environment active
 "%ORIGINAL_COMSPEC%" /k

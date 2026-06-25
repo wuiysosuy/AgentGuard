@@ -1,0 +1,6 @@
+# Local settings and command history
+command_history.json
+settings.json
+
+# VS Code directory
+.vscode/
